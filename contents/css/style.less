@@ -74,11 +74,45 @@ header {
 }
 
 #home-header {
-    background-color: #CCCCCC;
-    padding-bottom: 20px;
+    background-color: black;
+    background-image: url(../skyline.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 80px;
     text-align: center;
+    color: white;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    p.lead {
+        margin-bottom: 120px;
+    }
 
     .row > div {
         text-align: center;
+    }
+}
+
+#home-tools {
+    background-color: #CCCCCC;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    background-image: url(../poedit.png);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    height: 600px;
+
+    @media (max-width: @screen-md) {
+        background-size: 50%;
+        height: 400px;
+    }
+
+    @media (max-width: @screen-xs) {
+        background-image: none;
+        height: auto;
     }
 }
