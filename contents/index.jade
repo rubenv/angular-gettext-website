@@ -1,0 +1,65 @@
+---
+title: 'angular-gettext'
+template: wide.jade
+---
+
+section
+    .container
+        h1 angular-gettext
+        p.lead Super-simple translation support for Angular.JS
+
+        p
+            strong Key features:
+
+            ul
+                li Effortless to use, so you can concentrate on building your application
+                li Works seamlessly together with Angular.JS
+                li Supports over 130 languages, with correct plurals
+                li Built on a rich ecosystem of gettext tools
+                li Trivial to integrate
+
+section
+    .container
+        h2 Effortless translations
+        p Angular-gettext let's you focus on developing your application. Just write everything in English and annotate which parts should be translated. The tools do the rest.
+        p Marking a string as translatable is as simple as adding an attribute:
+        :markdown
+            ```html
+            <a href="/" translate>Home</a>
+            ```
+        p No need to maintain translation codes or magic values, that just causes headaches!
+
+section
+    .container
+        h2 Seamless Angular.JS integration
+        p Translating your application doesn't mean you have to give up any of the good stuff that Angular.JS provides. Interpolation and everything else we love and are used to just keep on working:
+        :markdown
+            ```html
+            <a href="/" translate>Hello {{name}}</a>
+            ```
+
+section
+    .container
+        h2 Correct plurals in all languages
+        p Not every language works like English. Did you know that Polish uses three plural forms? Or that Irish uses five? No worries, angular-gettext handles all of this for you. Just provide a plural string where needed.
+
+        :markdown
+            ```html
+            <span translate translate-n="count" translate-plural="There are {{count}} messages">There is {{count}} message</a>
+            ```
+
+        p The <code>span</code> above will always show a correctly pluralized message, even if the language uses wildly different pluralization rules.
+
+        p A full list of supported languages can be found <a href="http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html?id=l10n/pluralforms">here</a>.
+
+section
+    .container
+        h2 Rich tool support
+        p The widely used <a href="http://en.wikipedia.org/wiki/Gettext">gettext format</a> is used in angular-gettext (hence the name). This means you can use widely established translation tools like <a href="http://www.poedit.net/">Poedit</a>. Or you can use an online translation platform like <a href="http://pootle.translatehouse.org/">Pootle</a> or <a href="https://www.transifex.com/">Transifex</a>.
+        p The upside of this? Non-technical users can help out by translating. Or you can use professional translation services. Better results, faster.
+
+section
+    .container
+        h2 Get going fast
+        p Adding angular-gettext to your project only takes minutes. There's a sample application, a step-by-step guide and comprehensive documentation of all the tools you need.
+        a.btn.btn-primary(href="/getting-started") Get started!

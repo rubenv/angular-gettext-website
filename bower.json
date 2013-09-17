@@ -1,0 +1,14 @@
+{
+  "name": "angular-gettext-website",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.0-rc1",
+    "respond": "~1.2.0"
+  }
+}
