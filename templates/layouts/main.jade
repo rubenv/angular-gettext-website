@@ -12,16 +12,22 @@ html(lang="en")
         // endbuild
 
     body
-        header.header.container
-            ul.nav.nav-pills.pull-right
-                li: a(href='/dev-guide/') Developer guide
-                li: a(href='/contributing/') Contributing
-
-            h3.text-muted: a(href="/") angular-gettext
+        header.header
+            .container
+                .row
+                    .col-xs-4
+                        h1.text-muted: a(href="/") angular-gettext
+                    .col-xs-8
+                        .nav
+                            a(href='/dev-guide/') Developer guide
+                            a(href='/contributing/') Contributing
 
         block body
 
-        footer#page-footer
+        footer
+            .container
+                hr
+                p Angular-gettext was written by <a href="http://rocketeer.be">Ruben Vermeersch</a> and is licensed under the <a href="https://github.com/rubenv/angular-gettext/blob/master/LICENSE">MIT license</a>. You can get it on <a href="https://github.com/rubenv/angular-gettext">GitHub</a>.
             // TODO
 
         // build:js(.) /js/scripts.js

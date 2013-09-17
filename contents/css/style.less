@@ -1,109 +1,62 @@
 @import "bootstrap.less";
+@import "syntax.less";
 
-// Syntax highlights
+header {
+    background-color: @brand-primary;
+    color: white;
+    height: 40px;
+    white-space: nowrap;
 
-pre {
-    .comment,
-    .template_comment,
-    .diff .header,
-    .javadoc {
-      color: #998;
-      font-style: italic
+    a, a:link, a:visited {
+        color: white;
     }
 
-    .keyword,
-    .css .rule .keyword,
-    .javascript .title,
-    .nginx .title,
-    .subst,
-    .request,
-    .status {
-      color: #333;
-      font-weight: bold
+    a:hover {
+        color: @gray-lighter;
     }
 
-    .number,
-    .hexcolor {
-      color: #099;
+    .nav {
+        text-align: right;
+        line-height: 40px;
+
+        a {
+            padding: 10px;
+
+            &:hover {
+                background-color: darken(@brand-primary, 10%);
+                border-radius: 3px;
+            }
+
+            a:hover {
+                text-decoration: none;
+            }
+        }
     }
 
-    .string,
-    .tag .value {
-      color: #d14
+    h1 {
+        padding: 0px;
+        margin: 0px;
+        font-size: 22px;
+        line-height: 40px;
     }
 
-    .title,
-    .id,
-    .coffeescript .params,
-    .scss .preprocessor {
-      color: #900;
-      font-weight: bold
+    @media (max-width: @screen-tablet) {
+        h1 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .nav a {
+            padding: 5px;
+        }
     }
 
-    .javascript .title,
-    .subst {
-      font-weight: normal
-    }
+    @media (max-width: 350px) {
+        .row > div {
+            display: block;
+            width: 100%;
+        }
 
-    .class .title {
-      color: #458;
-      font-weight: bold
-    }
-
-    .tag,
-    .tag .title,
-    .rules .property,
-    .django .tag .keyword {
-      color: #000080;
-      font-weight: normal
-    }
-
-    .attribute,
-    .variable {
-      color: #008080
-    }
-
-    .regexp {
-      color: #009926
-    }
-
-    .class {
-      color: #458;
-      font-weight: bold
-    }
-
-    .symbol,
-    .tex .special,
-    .prompt {
-      color: #990073
-    }
-
-    .built_in {
-      color: #0086b3
-    }
-
-    .preprocessor,
-    .pi,
-    .doctype,
-    .shebang,
-    .cdata {
-      color: #999;
-      font-weight: bold
-    }
-
-    .deletion {
-      background: #fdd
-    }
-
-    .addition {
-      background: #dfd
-    }
-
-    .diff .change {
-      background: #0086b3
-    }
-
-    .chunk {
-      color: #aaa
+        height: inherit;
     }
 }

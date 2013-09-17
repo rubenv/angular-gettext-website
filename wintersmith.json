@@ -7,7 +7,8 @@
         "wintersmith-jade"
     ],
     "ignore": [
-        "css/bootstrap.less"
+        "css/bootstrap.less",
+        "css/syntax.less"
     ],
     "jade": {
         "pretty": true
