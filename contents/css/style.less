@@ -55,6 +55,18 @@ header {
         .row > div {
             display: block;
             width: 100%;
+
+            &#links {
+                background-color: darken(@brand-primary, 10%);
+
+                .nav {
+                    text-align: left;
+
+                    &:first-child {
+                        margin-left: -5px;
+                    }
+                }
+            }
         }
 
         height: inherit;

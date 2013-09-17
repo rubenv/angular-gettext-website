@@ -7,7 +7,12 @@ template: main.jade
 
 Add angular-gettext to your project:
 
-1. Grab the files, either by copying the files from the `dist` folder or (preferably) through bower: `bower install --save angular-gettext`.
+1. Grab the files, either by copying the files from the `dist` folder or (preferably) through bower:
+
+   ```
+   bower install --save angular-gettext
+   ```
+
 2. Include the angular-gettext source files in your app:
    
    ```html
