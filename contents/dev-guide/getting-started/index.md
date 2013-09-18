@@ -7,10 +7,24 @@ template: main.jade
 
 The main goal of angular-gettext is to make it extremely simple to use. Here's how it works, conceptually:
 
-1. Write your application as usual, in English.
-2. Annotate the strings that should be translated.
-3. Use the angular-gettext tools to extract those strings to a translation template.
-4. Once translated, use the same tools to embed the translations back into your application.
+<div class="row" id="gettingstarted-steps">
+    <div class="col-md-3 col-sm-6">
+        <div class="step">1</div>
+        Write your application as usual, in English.
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="step">2</div>
+        Annotate the strings that should be translated.
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="step">3</div>
+        Use the angular-gettext tools to extract those strings to a translation template.
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="step">4</div>
+        Once translated, use the same tools to embed the translations back into your application.
+    </div>
+</div>
 
 ## Adding angular-gettext to your project
 
