@@ -46,13 +46,13 @@ The main goal of angular-gettext is to make it extremely simple to use. Here's h
 
 2. Include the angular-gettext source files in your app:
    
-   ```html
+   ```xml
    <script src="bower_components/angular-gettext/dist/angular-gettext.min.js"></script>
    ```
    
 3. Add a dependency to angular-gettext in your Angular app:
 
-   ```js
+   ```javascript
    angular.module('myApp', ['gettext']);
    ```
    

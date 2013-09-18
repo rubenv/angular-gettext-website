@@ -7,7 +7,7 @@ template: main.jade
 
 If you have text that should be translated in your JavaScript code, wrap it with a call to a function named `gettext`. This module provides an injectable function to do so:
 
-```js
+```javascript
 angular.module("myApp").controller("helloController", function (gettext) {
     var myString = gettext("Hello");
 });

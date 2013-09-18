@@ -7,7 +7,7 @@ template: main.jade
 
 Strings are marked as translatable using the `translate` directive. Here's a simple example:
 
-```html
+```xml
 <h1 translate>Hello!</h1>
 ```
 
@@ -17,13 +17,13 @@ This div will automatically be translated using the translated strings (which we
 
 Plural strings can be annotated using two extra attributes: `translate-n` and `translate-plural`:
 
-```html
+```xml
  <div translate translate-n="count" translate-plural="{{count}} boats">One boat</div>
 ```
 
 The general format is:
 
-```html
+```xml
  <div translate translate-n="COUNTEXPR" translate-plural="PLURALSTR">SINGULARSTR</div>
 ```
 
@@ -33,7 +33,7 @@ Depending on the value of `COUNTEXPR`, either the singular string or the plural 
 
 Full interpolation support is available in translated strings, so the following will work as expected:
 
-```html
+```xml
  <div translate>Hello {{name}}!</div>
 ```
 
@@ -41,7 +41,7 @@ Full interpolation support is available in translated strings, so the following 
 
 Sometimes it's not an option to use an attribute (e.g. when you want to annotate an attribute value). There's a `translate` filter available for this purpose.
 
-```html
+```xml
  <input type="text" placeholder="{{'Username'|translate}}" />
 ```
 

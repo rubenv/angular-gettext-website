@@ -9,7 +9,7 @@ You can set translated strings by injecting the `gettextCatalog` and using the `
 
 As an example, you may have the following code in your application:
 
-```js
+```javascript
 angular.module('myApp').run(function (gettextCatalog) {
     // Load the strings automatically during initialization.
     gettextCatalog.setStrings('nl', {

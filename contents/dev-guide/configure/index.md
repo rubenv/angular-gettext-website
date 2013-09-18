@@ -9,7 +9,7 @@ template: main.jade
 
 Set the language by setting a language code on the catalog:
 
-```js
+```javascript
 angular.module('myApp').run(function (gettextCatalog) {
     gettextCatalog.currentLanguage = 'nl';
 });
@@ -21,7 +21,7 @@ You can do this anywhere in your application, the use of a `run` block above is 
 
 You can enable a debugging mode to clearly indicate untranslated strings:
 
-```js
+```javascript
 angular.module('myApp').run(function (gettextCatalog) {
     gettextCatalog.debug = true;
 });
