@@ -11,18 +11,28 @@ The main goal of angular-gettext is to make it extremely simple to use. Here's h
     <div class="col-md-3 col-sm-6">
         <div class="step">1</div>
         Write your application as usual, in English.
+        <br/>
+        <br class="visible-md visible-lg"/>
+        <img src="step1.png" />
     </div>
     <div class="col-md-3 col-sm-6">
         <div class="step">2</div>
         Annotate the strings that should be translated.
+        <br/>
+        <br class="visible-md visible-lg"/>
+        <img src="step2.png" />
     </div>
     <div class="col-md-3 col-sm-6">
         <div class="step">3</div>
         Use the angular-gettext tools to extract those strings to a translation template.
+        <br/>
+        <br class="visible-lg"/>
+        <img src="step3.png" />
     </div>
     <div class="col-md-3 col-sm-6">
         <div class="step">4</div>
         Once translated, use the same tools to embed the translations back into your application.
+        <img src="step4.png" />
     </div>
 </div>
 

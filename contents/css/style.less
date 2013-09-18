@@ -154,10 +154,32 @@ section.article {
 }
 
 #gettingstarted-steps {
+    text-align: center;
+
     .step {
-        text-align: center;
         font-weight: bold;
         color: @brand-primary;
         font-size: 64px;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        border: 1px solid @gray-light;
+        max-width: 100%;
+    }
+
+    @media (max-width: @screen-sm) {
+        text-align: left;
+        .step {
+            margin-top: 10px;
+            .h3;
+
+            &:before {
+                content: "Step ";
+            }
+        }
     }
 }
