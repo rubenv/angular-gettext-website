@@ -21,23 +21,24 @@ section#home-header
 
 section
     .container
-        h2 Effortless translations
-        p Angular-gettext let's you focus on developing your application. Just write everything in English and annotate which parts should be translated. The tools do the rest.
-        p Marking a string as translatable is as simple as adding an attribute:
-        :markdown
-            ```html
-            <a href="/" translate>Home</a>
-            ```
-        p No need to maintain translation codes or magic values, that just causes headaches!
-
-section
-    .container
-        h2 Seamless Angular.JS integration
-        p Translating your application doesn't mean you have to give up any of the good stuff that Angular.JS provides. Interpolation and everything else we love and are used to just keep on working:
-        :markdown
-            ```html
-            <a href="/" translate>Hello {{name}}</a>
-            ```
+        .row
+            .col-md-6
+                h2 Effortless translations
+                p Angular-gettext let's you focus on developing your application. Just write everything in English and annotate which parts should be translated. The tools do the rest.
+                p Marking a string as translatable is as simple as adding an attribute:
+                :markdown
+                    ```html
+                    <a href="/" translate>Home</a>
+                    ```
+                p No need to maintain translation codes or magic values, that just causes headaches!
+            .col-md-6
+                h2 Seamless Angular.JS integration
+                p Translating your application doesn't mean you have to give up any of the good stuff that Angular.JS provides. Interpolation and everything else we love and are used to just keep on working:
+                :markdown
+                    ```html
+                    <a href="/" translate>Hello {{name}}</a>
+                    ```
+                p And with a minified footprint of less than 3kb, you don't have to worry about the size of your application.
 
 section
     .container
