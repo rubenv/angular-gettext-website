@@ -91,6 +91,10 @@ header {
         margin-bottom: 120px;
     }
 
+    .row {
+        margin-bottom: 10px;
+    }
+
     .row > div {
         text-align: center;
     }
@@ -111,8 +115,34 @@ header {
         height: 400px;
     }
 
-    @media (max-width: @screen-xs) {
-        background-image: none;
+    @media (max-width: @screen-sm) {
         height: auto;
+        padding-bottom: 300px;
+        background-size: 400px;
+    }
+}
+
+#home-getstarted {
+    background-color: @brand-primary;
+    color: white;
+
+    padding-top: 50px;
+
+    .narrow {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+
+    hr {
+        margin-top: 100px;
+    }
+
+    p {
+        a, a:link {
+            color: white;
+            text-decoration: underline;
+        }
     }
 }
