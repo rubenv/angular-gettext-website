@@ -18,23 +18,27 @@ This div will automatically be translated using the translated strings (which we
 Plural strings can be annotated using two extra attributes: `translate-n` and `translate-plural`:
 
 ```xml
- <div translate translate-n="count" translate-plural="{{count}} boats">One boat</div>
+<div translate translate-n="count" translate-plural="{{count}} boats">One boat</div>
 ```
 
 The general format is:
 
 ```xml
- <div translate translate-n="COUNTEXPR" translate-plural="PLURALSTR">SINGULARSTR</div>
+<div translate translate-n="COUNTEXPR" translate-plural="PLURALSTR">SINGULARSTR</div>
 ```
 
 Depending on the value of `COUNTEXPR`, either the singular string or the plural string will be selected.
+
+Inside the strings, you can use any variable that is available in the scope. In the example above we are using the `{{count}}` expression, which is also used as the value of the `translate-n` attribute. It doesn't have to be like this: you can use any variable that's available.
+
+The `translate-n` attribute accepts any valid Angular.JS expression, even functions.
 
 ## Interpolation
 
 Full interpolation support is available in translated strings, so the following will work as expected:
 
 ```xml
- <div translate>Hello {{name}}!</div>
+<div translate>Hello {{name}}!</div>
 ```
 
 ## Attributes
@@ -42,7 +46,7 @@ Full interpolation support is available in translated strings, so the following 
 Sometimes it's not an option to use an attribute (e.g. when you want to annotate an attribute value). There's a `translate` filter available for this purpose.
 
 ```xml
- <input type="text" placeholder="{{'Username'|translate}}" />
+<input type="text" placeholder="{{'Username'|translate}}" />
 ```
 
 This filter does not support plural strings.
