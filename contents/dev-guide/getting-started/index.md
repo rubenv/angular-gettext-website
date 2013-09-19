@@ -37,8 +37,9 @@ The main goal of angular-gettext is to make it extremely simple to use. Here's h
 </div>
 
 
-Next steps:
+## Next steps
 
+* [Add angular-gettext to your project](/dev-guide/install/).
 * [Annotate strings with the `translate` directive](/dev-guide/annotate/).
 * [Extract strings from the source code](/dev-guide/extract/).
 * [Translate strings](/dev-guide/translate/).
