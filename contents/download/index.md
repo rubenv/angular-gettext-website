@@ -9,6 +9,8 @@ Angular-gettext is available on GitHub: [https://github.com/rubenv/angular-gette
 
 The grunt tasks can be found at [https://github.com/rubenv/grunt-angular-gettext](https://github.com/rubenv/grunt-angular-gettext).
 
+Usage instructions can be found in the [developer guide](/dev-guide/).
+
 # Contributing
 
 Pull requests are welcomed (if they make sense).
