@@ -7,7 +7,7 @@ template: main.jade
 
 Let's assume you've [annotated your application](/dev-guide/annotate/). It's now time to extract these strings into a translation template. This is a `.pot` file: a standard gettext template that lists all the strings that should be translated.
 
-<img src="grunt.png" class="pull-right" />
+<img src="grunt.png" />
 
 We will use a [Grunt](http://gruntjs.com/) task to do this. If you haven't used Grunt before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
