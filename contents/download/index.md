@@ -1,11 +1,17 @@
 ---
-title: 'Contributing'
+title: 'Download'
 template: main.jade
 ---
 
+# Download
+
+Angular-gettext is available on GitHub: [https://github.com/rubenv/angular-gettext](https://github.com/rubenv/angular-gettext).
+
+The grunt tasks can be found at [https://github.com/rubenv/grunt-angular-gettext](https://github.com/rubenv/grunt-angular-gettext).
+
 # Contributing
 
-Angular-gettext is available on GitHub: [https://github.com/rubenv/angular-gettext](https://github.com/rubenv/angular-gettext). Pull requests are welcomed (if they make sense).
+Pull requests are welcomed (if they make sense).
 
 All code lives in the `src` folder and is written in JavaScript. Try to stick to the style conventions used in existing code. Tests are written in CoffeeScript.
 
