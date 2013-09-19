@@ -14,3 +14,15 @@ angular.module("myApp").controller("helloController", function (gettext) {
 ```
 
 The `Hello` string will be added to your `.pot` file using the code above.
+
+Be sure to update your Grunt task to include the JavaScript files:
+
+```javascript
+grunt.initConfig({
+  nggettext_extract: {
+    pot: {
+      'po/myApp.pot': ['src/views/*.html', 'src/js/*.js']
+    },
+  },
+})
+```
