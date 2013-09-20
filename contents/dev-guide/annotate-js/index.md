@@ -21,7 +21,7 @@ Be sure to update your Grunt task to include the JavaScript files:
 grunt.initConfig({
   nggettext_extract: {
     pot: {
-      'po/myApp.pot': ['src/views/*.html', 'src/js/*.js']
+      'po/template.pot': ['src/views/*.html', 'src/js/*.js']
     },
   },
 })

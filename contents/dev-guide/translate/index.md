@@ -26,6 +26,8 @@ An alternative to Transifex is [Pootle](http://pootle.translatehouse.org/), a we
 
 The [poedit](http://www.poedit.net/) application should be installed on your desktop, but is very easy to use (with one small exception). Here's a step by step guide:
 
+### First translation
+
 1. Download and install Poedit, which is available for Windows, Linux and Mac OS X.
 2. Start Poedit and choose the "New Catalog from POT File..."
 
@@ -37,11 +39,25 @@ The [poedit](http://www.poedit.net/) application should be installed on your des
    
    You can find the correct value for these fields on [this page](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html?id=l10n/pluralforms).
    
-4. TODO
+4. Save the new `.po` file somewhere in your project (I recommend putting it in a `po` folder, next to the `.pot` file, as is convention for gettext projects).
 
+   ![Save](catalog-save.png)
 
+5. Translate the strings.
 
+   ![Translate](translate.png)
 
+6. Save your catalog and continue to the next step
 
+### Afterwards
+
+If you make changes to your project, simply run `grunt` again to generate a new `.pot` template. Then:
+
+1. Open your translation catalog (the `.po` file).
+2. Use the "Update from POT File..." menu option. This will update your translation catalog by adding new strings, removing obsolete ones and flagging slightly changed ones for review.
+
+   ![Update from catalog](update.png)
+
+3. Update your translations as usual and remember to save your work.
 
 <a href="/dev-guide/compile/" class="btn btn-primary">Next: Compiling your translations</a>
