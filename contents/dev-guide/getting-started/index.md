@@ -36,6 +36,9 @@ The main goal of angular-gettext is to make it extremely simple to use. Here's h
     </div>
 </div>
 
+## Sample application
+
+A sample application can be found at [https://github.com/rubenv/angular-gettext-example](https://github.com/rubenv/angular-gettext-example). This is an adaptation of the [TodoMVC](http://todomvc.com/) example. You can use this as a guideline while adding angular-gettext to your own application.
 
 ## Next steps
 

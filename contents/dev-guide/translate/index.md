@@ -37,7 +37,7 @@ The [poedit](http://www.poedit.net/) application should be installed on your des
 
    ![Catalog properties](catalog-properties.png)
    
-   You can find the correct value for these fields on [this page](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html?id=l10n/pluralforms).
+   You can find the correct value for these fields on [this page](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html?id=l10n/pluralforms). **Warning**: Be sure to check that you don't include a semicolon at the end of the plural-forms value, otherwise Poedit will not show the correct input boxes.
    
 4. Save the new `.po` file somewhere in your project (I recommend putting it in a `po` folder, next to the `.pot` file, as is convention for gettext projects).
 

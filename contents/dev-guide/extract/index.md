@@ -28,7 +28,9 @@ In your project's Gruntfile, add a section named `nggettext_extract` to the data
 grunt.initConfig({
   nggettext_extract: {
     pot: {
-      'po/template.pot': ['src/views/*.html']
+      files: {
+        'po/template.pot': ['src/views/*.html']
+      }
     },
   },
 })

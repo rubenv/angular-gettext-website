@@ -15,7 +15,9 @@ In your project's Gruntfile, add a section named `nggettext_compile` to the data
 grunt.initConfig({
   nggettext_compile: {
     all: {
-      'src/js/translations.js': ['po/*.po']
+      files: {
+        'src/js/translations.js': ['po/*.po']
+      }
     },
   },
 })
