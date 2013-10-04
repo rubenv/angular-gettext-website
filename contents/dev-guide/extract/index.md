@@ -38,4 +38,24 @@ grunt.initConfig({
 
 After running `grunt`, this will create a `.pot` file. You can open this with any normal text editor: verify that your annotated strings are in there.
 
+## Using custom delimiters
+
+If you've configured Angular.JS to use other expression delimiters than `{{` and `}}`, be sure to update the configuration for `nggettext_extract` accordingly:
+
+```javascript
+grunt.initConfig({
+  nggettext_extract: {
+    pot: {
+      options: {
+        startDelim: '[[',
+        endDelim: ']]'
+      },
+      files: {
+        'po/template.pot': ['src/views/*.html']
+      }
+    },
+  },
+})
+```
+
 <a href="/dev-guide/translate/" class="btn btn-primary">Next: Translating your strings</a>
