@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "wintersmith-less": "~0.2.1",
-    "wintersmith-jade": "rubenv/wintersmith-jade",
+    "wintersmith-jade": "~0.1.0",
     "marked": "~0.2.9",
     "highlight.js": "~7.3.0"
   }
