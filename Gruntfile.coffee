@@ -137,7 +137,7 @@ module.exports = (grunt) ->
         'useminPrepare'
         'concat'
         'cssmin'
-        'uglify'
+        #'uglify'
         'usemin'
         'htmlmin'
         'zopfli'
