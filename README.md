@@ -1,6 +1,26 @@
-# angular-gettext-website - The angular-gettext website.
+# angular-gettext-website
+
+> The angular-gettext website.
 
 Online here: [http://angular-gettext.rocketeer.be/](http://angular-gettext.rocketeer.be/).
+
+## Usage
+
+Install the dependencies:
+
+```
+npm install
+```
+
+Preview it:
+
+```
+grunt watch
+```
+
+This website is built with Wintersmith. Check the [wintersmith website](http://wintersmith.io/) for details on how it's structured.
+
+[Pull requests welcome!](https://github.com/rubenv/angular-gettext-website/pulls)
     
 ## License 
 
