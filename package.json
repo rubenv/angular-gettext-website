@@ -13,12 +13,14 @@
     "grunt": "~0.4.1",
     "grunt-wintersmith": "0.0.2",
     "grunt-contrib-clean": "~0.5.0",
-    "grunt-zopfli": "~0.3.1"
+    "grunt-zopfli": "~0.3.1",
+    "wintersmith": "~2.0.10",
+    "wintersmith-livereload": "~0.1.1"
   },
   "dependencies": {
-    "wintersmith-less": "~0.2.1",
+    "highlight.js": "~7.3.0",
+    "marked": "~0.3.1",
     "wintersmith-jade": "~0.1.0",
-    "marked": "~0.2.9",
-    "highlight.js": "~7.3.0"
+    "wintersmith-less": "~0.2.1"
   }
 }

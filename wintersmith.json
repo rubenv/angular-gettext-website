@@ -3,8 +3,9 @@
     "port": 3001,
     "plugins": [
         "./plugins/highlight.coffee",
+        "wintersmith-jade",
         "wintersmith-less",
-        "wintersmith-jade"
+        "wintersmith-livereload"
     ],
     "ignore": [
         "css/bootstrap.less",
