@@ -1,5 +1,7 @@
 language: node_js
 before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq zopfli
   - npm install -g grunt-cli bower
 before_script:
   - bower install

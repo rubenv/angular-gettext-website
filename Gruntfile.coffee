@@ -49,7 +49,6 @@ module.exports = (grunt) ->
     @registerTask 'default', ['build']
 
     @registerTask 'watch', [
-        'build'
         'wintersmith:preview'
     ]
 
