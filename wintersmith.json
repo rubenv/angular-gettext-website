@@ -1,5 +1,5 @@
 {
-    "output": ".tmp",
+    "output": "dist",
     "port": 3001,
     "plugins": [
         "./plugins/highlight.coffee",
@@ -11,6 +11,9 @@
         "css/syntax.less"
     ],
     "jade": {
-        "pretty": true
+        "pretty": false
+    },
+    "less": {
+        "compress": true
     }
 }
