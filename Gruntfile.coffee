@@ -1,8 +1,5 @@
 module.exports = (grunt) ->
     @loadNpmTasks('grunt-contrib-clean')
-    @loadNpmTasks('grunt-contrib-concat')
-    @loadNpmTasks('grunt-contrib-cssmin')
-    @loadNpmTasks('grunt-contrib-uglify')
     @loadNpmTasks('grunt-wintersmith')
     @loadNpmTasks('grunt-zopfli')
 
