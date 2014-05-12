@@ -37,6 +37,12 @@ angular.module("myApp").controller("helloController", function (gettextCatalog) 
 });
 ```
 
-Any string passed to `gettextCatalog.getString` is automatically marked for translation. In other words: no need to annotate these strings with `gettext()`.
+Any string passed to `gettextCatalog.getString` is automatically marked for translation. In other words: no need to annotate these strings with `gettext()`. This also works for plurals:
+
+```javascript
+angular.module("myApp").controller("helloController", function (gettextCatalog) {
+    var myString2 = gettextCatalog.getPlural(3, "Bird", "Birds");
+});
+```
 
 It's not recommended to put translated strings on the scope. Use the [filter](/dev-guide/annotate/) for translations in views. The JavaScript API is meant for strings that are used in library code.
