@@ -26,3 +26,17 @@ grunt.initConfig({
   },
 })
 ```
+
+## Translating directly in JavaScript.
+
+You can inject `gettextCatalog` to fetch translated strings in JavaScript. Use the `getString` method for this.
+
+```javascript
+angular.module("myApp").controller("helloController", function (gettextCatalog) {
+    var translated = gettextCatalog.getString("Hello");
+});
+```
+
+Any string passed to `gettextCatalog.getString` is automatically marked for translation. In other words: no need to annotate these strings with `gettext()`.
+
+It's not recommended to put translated strings on the scope. Use the [filter](/dev-guide/annotate/) for translations in views. The JavaScript API is meant for strings that are used in library code.
