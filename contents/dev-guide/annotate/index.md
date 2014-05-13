@@ -51,4 +51,14 @@ Sometimes it's not an option to use an attribute (e.g. when you want to annotate
 
 This filter does not support plural strings.
 
+## Comments
+
+Extracted comments can be wrapped using the `translate-comment` directive.
+
+A simple example:
+
+```html
+<h1 translate-comment="This is a comment" translate>Hello!</h1>
+```
+
 <a href="/dev-guide/extract/" class="btn btn-primary">Next: Extracting strings</a>

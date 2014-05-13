@@ -46,3 +46,16 @@ angular.module("myApp").controller("helloController", function (gettextCatalog) 
 ```
 
 It's not recommended to put translated strings on the scope. Use the [filter](/dev-guide/annotate/) for translations in views. The JavaScript API is meant for strings that are used in library code.
+
+## Adding extracted comments in JavaScript.
+
+You can insert extracted comments in JavaScript using the triple forward slash syntax of `gettext`.
+
+For example,
+
+```javascript
+angular.module("myApp").controller("helloController", function (gettext) {
+    \\\ This is a comment
+    var myString = gettext("Hello");
+});
+```
