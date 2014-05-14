@@ -53,12 +53,21 @@ This filter does not support plural strings.
 
 ## Comments
 
-Extracted comments can be wrapped using the `translate-comment` directive.
+Comments can be added to the catalog to help translators with the context of the translatable string.
+
+You can use the `translate-comment` directive to add context comments.
 
 A simple example:
 
-```html
-<h1 translate-comment="This is a comment" translate>Hello!</h1>
+```xml
+<h1 translate-comment="Verb" translate>File</h1>
 ```
+In the above example, the comment will help translator to treat the string, "File", as a verb.
+
+The comments will appear in the catalog.
+
+E.g. in [poedit](http://poedit.net/) application, the comment will appear under "Notes for translators" section.
+
+![Comments PoEdit](comments-poedit.png)
 
 <a href="/dev-guide/extract/" class="btn btn-primary">Next: Extracting strings</a>
