@@ -49,7 +49,7 @@ It's not recommended to put translated strings on the scope. Use the [filter](/d
 
 ## Adding comments in JavaScript.
 
-Similar to the [comments in HTML](/dev-guide/annotate/#comments), you can insert context comments in JavaScript using the triple forward slash syntax of `gettext`.
+Similar to the [comments in HTML](/dev-guide/annotate/#comments), you can insert context comments in JavaScript using the triple forward slash syntax of gettext.
 
 For example,
 
