@@ -11,7 +11,7 @@ Set the language by setting a language code on the catalog:
 
 ```javascript
 angular.module('myApp').run(function (gettextCatalog) {
-    gettextCatalog.currentLanguage = 'nl';
+    gettextCatalog.setCurrentLanguage('nl');
 });
 ```
 
