@@ -45,3 +45,9 @@ Translate a plural string with the given context.
 
 ### `loadRemote(url)`
 Load a set of translation strings from a given URL. This should be a JSON catalog generated with `grunt-angular-gettext`.
+
+# translate directive
+See [Using the `translate` directive](/dev-guide/annotate/).
+
+# translate filter
+See [Using the `translate` filter](/dev-guide/annotate/#attributes).
