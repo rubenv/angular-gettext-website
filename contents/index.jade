@@ -47,7 +47,7 @@ section
 
         :markdown
             ```html
-            <span translate translate-n="count" translate-plural="There are {{count}} messages">There is {{count}} message</span>
+            <span translate translate-n="msgCount" translate-plural="There are {{$count}} messages">There is {{$count}} message</span>
             ```
 
         p The <code>span</code> above will always show a correctly pluralized message, even if the language uses wildly different pluralization rules.
