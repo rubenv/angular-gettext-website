@@ -44,7 +44,7 @@ The `context` parameter is optional: pass `null` (or don't pass anything) if you
 Translate a plural string with the given context.
 
 ### `loadRemote(url)`
-Load a set of translation strings from a given URL. This should be a JSON catalog generated with `grunt-angular-gettext`.
+Load a set of translation strings from a given URL. This should be a JSON catalog generated with `grunt-angular-gettext`. [More details here.](/dev-guide/lazy-loading/)
 
 # translate directive
 See [Using the `translate` directive](/dev-guide/annotate/).
