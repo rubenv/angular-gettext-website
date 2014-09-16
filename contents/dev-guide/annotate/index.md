@@ -18,7 +18,7 @@ This div will automatically be translated using the translated strings (which we
 Plural strings can be annotated using two extra attributes: `translate-n` and `translate-plural`:
 
 ```xml
-<div translate translate-n="count" translate-plural="{{count}} boats">One boat</div>
+<div translate translate-n="boatCount" translate-plural="{{$count}} boats">One boat</div>
 ```
 
 The general format is:
@@ -29,7 +29,7 @@ The general format is:
 
 Depending on the value of `COUNTEXPR`, either the singular string or the plural string will be selected.
 
-Inside the strings, you can use any variable that is available in the scope. In the example above we are using the `{{count}}` expression, which is also used as the value of the `translate-n` attribute. It doesn't have to be like this: you can use any variable that's available.
+Inside the strings, you can use any variable that is available in the scope. A special `$count` variable is also available, which resolves to the value of the `translate-n` attribute.
 
 The `translate-n` attribute accepts any valid Angular.JS expression, even functions.
 
