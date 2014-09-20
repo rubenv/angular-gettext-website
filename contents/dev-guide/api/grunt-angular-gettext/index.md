@@ -11,3 +11,5 @@ The `grunt-angular-gettext` module exposes the following tasks:
 * `nggettext_extract`: Extracts strings from markup and JavaScript files.
 
 ## `nggettext_compile`
+
+## `nggettext_extract`
