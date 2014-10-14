@@ -20,15 +20,15 @@ header {
         line-height: 40px;
 
         a {
-            padding: 10px;
+            padding: 12px;
+            text-decoration: none;
 
             &:hover {
                 background-color: darken(@brand-primary, 10%);
                 border-radius: 3px;
             }
 
-            a:hover {
-                text-decoration: none;
+            &:hover {
             }
         }
     }
@@ -38,6 +38,10 @@ header {
         margin: 0px;
         font-size: 22px;
         line-height: 40px;
+
+        a:hover {
+            text-decoration: none
+        }
     }
 
     @media (max-width: @screen-tablet) {
