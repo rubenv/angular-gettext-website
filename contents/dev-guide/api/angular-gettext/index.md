@@ -14,7 +14,11 @@ angular.module("myApp").controller("MyCtrl", function ($scope, gettextCatalog) {
 
 ## Fields
 
-* `debug` (default: `false`): Whether or not to prefix untranslated strings with `[MISSING]: `.
+* `debug` (default: `false`): Whether or not to prefix untranslated strings with `[MISSING]: ` or a custom prefix.
+* `debugPrefix` (default: `[MISSING]: `): Custom prefix for untranslated strings.
+* `showTranslatedMarkers` (default: `false`): Whether or not to wrap all processed text with markers. Example output: `[Welcome]`
+* `translatedMarkerPrefix` (default: `[`): Custom prefix to mark strings that have been run through angular-gettext.
+* `translatedMarkerSuffix` (default: `]`): Custom suffix to mark strings that have been run through angular-gettext.
 * `strings`: An object of loaded translation strings. Shouldn't be used directly.
 * `baseLanguage`: The default language, in which you're application is written. This defaults to English and it's generally a bad idea to use anything else: if your language has different pluralization rules you'll end up with incorrect translations. **Deprecated**
 * `currentLanguage`: The current language. **Warning:** Do not set this field directly, use the `setCurrentLanguage` method.
