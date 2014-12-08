@@ -13,6 +13,12 @@ Strings are marked as translatable using the `translate` directive. Here's a sim
 
 This div will automatically be translated using the translated strings (which we'll define later on). For instance, in Dutch, it might read `Hallo!`.
 
+You can also use the `translate` directive as an element:
+
+```xml
+<translate>Hello!</translate>
+```
+
 ## Plurals
 
 Plural strings can be annotated using two extra attributes: `translate-n` and `translate-plural`:
