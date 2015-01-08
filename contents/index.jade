@@ -7,22 +7,12 @@ section#home-header
     .container
         h1 angular-gettext
         p.lead Super-simple translation support for Angular.JS
+        a.btn.btn-default.btn-lg(href='/download/') Download
 
-        p: strong Key Features
-
-        .row
-            .col-sm-4 Globalize effortlessly
-            .col-sm-4 Works seamlessly with Angular.JS
-            .col-sm-4 Trivial to integrate
-        .row
-            .col-sm-4 Built on a rich ecosystem of gettext tools
-            .col-sm-4 Tiny footprint
-            .col-sm-4 Correct plurals in over 130 languages
-
-section
+section#home-usp
     .container
         .row
-            .col-md-6
+            .col-sm-6.col-md-5
                 h2 Effortless translations
                 p Angular-gettext let's you focus on developing your application. Just write everything in English and annotate which parts should be translated. The tools do the rest.
                 p Marking a string as translatable is as simple as adding an attribute:
@@ -31,7 +21,7 @@ section
                     <a href="/" translate>Home</a>
                     ```
                 p No need to maintain translation codes or magic values, that just causes headaches!
-            .col-md-6
+            .col-sm-6.col-md-5.col-md-offset-2
                 h2 Seamless Angular.JS integration
                 p Translating your application doesn't mean you have to give up any of the good stuff that Angular.JS provides. Interpolation and everything else we love and are used to just keep on working:
                 :markdown
@@ -40,24 +30,21 @@ section
                     ```
                 p And with a minified footprint of less than 4kb, you don't have to worry about the size of your application. Add gzip compression and it amounts to less than 1.5kb.
 
-section
-    .container
-        h2 Correct plurals in all languages
-        p Not every language works like English. Did you know that Polish uses three plural forms? Or that Irish uses five? No worries, angular-gettext handles all of this for you. Just provide a plural string where needed.
+        div
+            h2 Correct plurals in all languages
+            p Not every language works like English. Did you know that Polish uses three plural forms? Or that Irish uses five? No worries, angular-gettext handles all of this for you. Just provide a plural string where needed.
 
-        :markdown
-            ```html
-            <span translate translate-n="msgCount" translate-plural="{{$count}} new messages">1 new message</span>
-            ```
-
-        p The <code>span</code> above will always show a correctly pluralized message, even if the language uses wildly different pluralization rules.
-
-        p A full list of supported languages (over 130) can be found <a href="http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html?id=l10n/pluralforms">here</a>.
+            :markdown
+                ```html
+                <span translate translate-n="msgCount" translate-plural="{{$count}} new messages">1 new message</span>
+                ```
+            p The <code>span</code> above will always show a correctly pluralized message, even if the language uses wildly different pluralization rules.
+            p A full list of supported languages (over 130) can be found <a href="http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html?id=l10n/pluralforms">here</a>.
 
 section#home-tools
     .container
         .row
-            .col-sm-5.col-md-3.col-xs-12
+            .col-sm-6.col-md-5.col-xs-12
                 h2 Rich tool support
                 p The widely used <a href="http://en.wikipedia.org/wiki/Gettext">gettext format</a> is used in angular-gettext (hence the name). This means you can use widely established translation tools like <a href="http://www.poedit.net/">Poedit</a>. Or you can use an online translation platform like <a href="http://pootle.translatehouse.org/">Pootle</a>, <a href="https://www.transifex.com/">Transifex</a>, or <a href="http://www.zanata.org">Zanata</a>.
                 p The upside of this? Non-technical users can help out by translating. Or you can use professional translation services. Better results, faster.
