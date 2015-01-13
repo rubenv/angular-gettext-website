@@ -21,12 +21,14 @@ angular.module("myApp").controller("MyCtrl", function ($scope, gettextCatalog) {
 * `translatedMarkerSuffix` (default: `]`): Custom suffix to mark strings that have been run through angular-gettext.
 * `strings`: An object of loaded translation strings. Shouldn't be used directly.
 * `baseLanguage`: The default language, in which you're application is written. This defaults to English and it's generally a bad idea to use anything else: if your language has different pluralization rules you'll end up with incorrect translations. **Deprecated**
-* `currentLanguage`: The current language. **Warning:** Do not set this field directly, use the `setCurrentLanguage` method.
 
 ## Methods
 
 ### `setCurrentLanguage(lang)`
 Sets the current language and makes sure that all translations get updated correctly.
+
+### `getCurrentLanguage()`
+Returns the current language.
 
 ### `setStrings(language, strings)`
 Processes an object of string definitions. [More details here.](/dev-guide/manual-setstrings/)
