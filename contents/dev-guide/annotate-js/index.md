@@ -41,7 +41,7 @@ Any string passed to `gettextCatalog.getString` is automatically marked for tran
 
 ```javascript
 angular.module("myApp").controller("helloController", function (gettextCatalog) {
-    var myString2 = gettextCatalog.getPlural(3, "Bird", "Birds");
+    var myString2 = gettextCatalog.getPlural(3, "One Bird", "{{$count}} Birds", {});
 });
 ```
 
