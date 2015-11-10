@@ -26,7 +26,7 @@ This website is built with Wintersmith. Check the [wintersmith website](http://w
 
     (The MIT License)
 
-    Copyright (C) 2013-2014 by Ruben Vermeersch <ruben@rocketeer.be>
+    Copyright (C) 2013-2015 by Ruben Vermeersch <ruben@rocketeer.be>
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
