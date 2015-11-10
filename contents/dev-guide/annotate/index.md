@@ -57,7 +57,7 @@ Sometimes it's not an option to use an attribute (e.g. when you want to annotate
 
 This filter does not support plural strings.
 
-You may want to use [custom annotations](/dev-guide/custom-annotations) to avoid using the `translate` filter all the time.
+You may want to use [custom annotations](/dev-guide/custom-annotations/) to avoid using the `translate` filter all the time.
 
 ## Contexts
 
