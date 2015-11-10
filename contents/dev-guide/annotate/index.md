@@ -57,23 +57,42 @@ Sometimes it's not an option to use an attribute (e.g. when you want to annotate
 
 This filter does not support plural strings.
 
+You may want to use <a href="/dev-guide/custom-annotations" custom annotations to avoid using the `translate` filter all the time.
+
+## Contexts
+
+Contexts can be added to strings to be translated. The translation for the same string in a different context can be different.
+
+You can use the `translate-context` directive to add contexts.
+
+```xml
+<h1 translate-context="Verb" translate>File</h1>
+<h1 translate-context="Noun" translate>File</h1>
+```
+
+In the above example, the translator has to translate "File" twice for the two different contexts.
+
+The contexts will appear in the catalog (as `msgctxt`).
+
+In the application [Poedit](http://poedit.net/), the contexts will appear under "Context":
+
+![Contexts Poedit](contexts-poedit.png)
+
 ## Comments
 
 Comments can be added to the catalog to help translators with the context of the translatable string.
 
-You can use the `translate-comment` directive to add context comments.
+You can use the `translate-comment` directive to add comments for translators.
 
 A simple example:
 
 ```xml
-<h1 translate-comment="Verb" translate>File</h1>
+<div translate-comment="{{name}} expands to the logged in user name" translate>Hello {{name}}!</div>
 ```
-In the above example, the comment will help translator to treat the string, "File", as a verb.
-
 The comments will appear in the catalog.
 
-E.g. in [poedit](http://poedit.net/) application, the comment will appear under "Notes for translators" section.
+In the application [Poedit](http://poedit.net/), the comment will appear under "Notes for translators" section:
 
-![Comments PoEdit](comments-poedit.png)
+![Comments Poedit](comments-poedit.png)
 
 <a href="/dev-guide/extract/" class="btn btn-primary">Next: Extracting strings</a>
