@@ -33,11 +33,11 @@ Returns the current language.
 ### `setStrings(language, strings)`
 Processes an object of string definitions. [More details here.](/dev-guide/manual-setstrings/)
 
-### `getStringForm(string, n)`
-Get the correct pluralized (but untranslated) string for the value of `n`.
+### `getStringForm(string, n, context)`
+Get the correct pluralized and translated string for the value of `n`, with a given `context`.
 
-### `getString(string, context)`
-Translate a string with the given context. Uses Angular.JS interpolation, so something like this will do what you expect:
+### `getString(string, scope, context)`
+Translate a string with the given scope and context. Uses Angular.JS interpolation, so something like this will do what you expect:
 
 ```js
 var hello = gettextCatalog.getString("Hello {{name}}!", { name: "Ruben" });
