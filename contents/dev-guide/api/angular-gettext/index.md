@@ -33,9 +33,6 @@ Returns the current language.
 ### `setStrings(language, strings)`
 Processes an object of string definitions. [More details here.](/dev-guide/manual-setstrings/)
 
-### `getStringForm(string, n, context)`
-Get the correct pluralized and translated string for the value of `n`, with a given `context`.
-
 ### `getString(string, scope, context)`
 Translate a string with the given scope and context. Uses Angular.JS interpolation, so something like this will do what you expect:
 
