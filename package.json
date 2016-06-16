@@ -11,8 +11,8 @@
   "license": "MIT",
   "devDependencies": {
     "bootstrap": "^3.3.1",
-    "grunt": "~0.4.1",
-    "grunt-contrib-clean": "~0.5.0",
+    "grunt": "~1.0.1",
+    "grunt-contrib-clean": "~1.0.0",
     "grunt-wintersmith": "0.0.2",
     "grunt-zopfli": "~0.3.1",
     "wintersmith": "~2.0.10",
