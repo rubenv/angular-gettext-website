@@ -7,12 +7,14 @@ template: main.jade
 
 Let's assume you've [annotated your application](/dev-guide/annotate/). It's now time to extract these strings into a translation template. This is a `.pot` file: a standard gettext template that lists all the strings that should be translated.
 
-[angular-gettext-tools](https://github.com/rubenv/angular-gettext-tools) is the official library to extract strings from templates and jscode. Several wrappers exist that integrate it with other tools:
+[Angular-gettext-tools](https://github.com/rubenv/angular-gettext-tools) is the official library to extract strings from HTML templates and JavaScript code. Several wrappers exist that integrate it with other tools:
 
 Official:
+
 * [Grunt plugin](https://github.com/rubenv/grunt-angular-gettext)
 
 Third party
+
 * [Gulp plugin](https://github.com/gabegorelick/gulp-angular-gettext)
 * [CLI utility](https://github.com/huston007/angular-gettext-cli)
 * [Webpack loader (compilation)](https://github.com/princed/angular-gettext-loader)
