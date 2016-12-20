@@ -45,3 +45,5 @@ This website is built with Wintersmith. Check the [wintersmith website](http://w
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     THE SOFTWARE.
+
+Favicon icon by [Ilsur Aptukov, RU](https://thenounproject.com/Ilsur/).
