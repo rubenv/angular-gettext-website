@@ -1,22 +1,37 @@
 @import "bootstrap.less";
 @import "syntax.less";
 
+@text-color: #444444;
+
 header {
-    background-color: @brand-primary;
-    color: white;
+    color: @text-color;
     height: 40px;
     white-space: nowrap;
 
+    background-color: #337ab7;
+	
+    body.landing & {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: transparent;
+
+        #brand {
+            display: none;
+        }
+    }
+
     a, a:link, a:visited {
-        color: white;
+        color: #fff;
     }
 
     a:hover {
-        color: @gray-lighter;
+        color: #ddd;
     }
 
     .nav {
-        text-align: right;
+	margin-left: -10px;
         line-height: 40px;
 
         a {
@@ -24,7 +39,7 @@ header {
             text-decoration: none;
 
             &:hover {
-                background-color: darken(@brand-primary, 10%);
+                background-color: transparent;
                 border-radius: 3px;
             }
 
@@ -78,21 +93,27 @@ header {
 }
 
 #home-header {
-    background-color: black;
-    background-image: url(../skyline.jpg);
-    background-position: 50% 50%;
+    background-color: #337ab7;
+    background-image: url(../bg-overlay.png);
+    background-position: 50% -10px;
     background-repeat: no-repeat;
     padding-top: 100px;
     padding-bottom: 80px;
+    background-size: cover;
     text-align: center;
     color: white;
 
     h1 {
-        margin-bottom: 20px;
+        font-size: 48px;
+        margin-bottom: 15px;
     }
 
     p.lead {
-        margin-bottom: 120px;
+        margin-bottom: 40px;
+    }
+
+    .btn-lg {
+       font-size: 20px;
     }
 
     .row {
@@ -101,6 +122,15 @@ header {
 
     .row > div {
         text-align: center;
+    }
+}
+
+#home-usp {
+    padding-top: 15px;
+    padding-bottom: 25px;
+
+    .container > div + div {
+        margin-top: 30px;
     }
 }
 

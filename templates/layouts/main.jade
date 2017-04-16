@@ -1,3 +1,6 @@
+block vars
+    - var bodyClass = ''
+
 doctype html
 html(lang="en")
     head
@@ -11,16 +14,16 @@ html(lang="en")
         link(rel="stylesheet", href="/css/style.css", type="text/css")
         | !{ livereloadScript }
 
-    body
+    body(class='#{bodyClass}')
         header.header
             .container
-                .row
-                    .col-xs-4#brand
-                        h1.text-muted: a(href="/") angular-gettext
-                    .col-xs-8#links
-                        .nav
-                            a(href='/dev-guide/') Developer guide
-                            a(href='/download/') Download
+                #brand.pull-right
+                    h1.text-muted: a(href="/") angular-gettext
+                #links
+                    .nav
+                        a(href='/dev-guide/') Developer guide
+                        a(href='/download/') Download
+                        a(href='https://github.com/rubenv/angular-gettext') GitHub
 
         block body
 
