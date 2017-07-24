@@ -18,6 +18,7 @@ Third party
 * [Gulp plugin](https://github.com/gabegorelick/gulp-angular-gettext)
 * [CLI utility](https://github.com/huston007/angular-gettext-cli)
 * [Webpack loader (compilation)](https://github.com/princed/angular-gettext-loader)
+* [Webpack plugin (compilation and extraction)](https://github.com/augusto-altman/angular-gettext-plugin)
 
 <img src="grunt.png" />
 
