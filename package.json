@@ -13,10 +13,9 @@
     "bootstrap": "^3.3.1",
     "grunt": "~1.0.1",
     "grunt-contrib-clean": "~1.0.0",
-    "grunt-wintersmith": "0.0.2",
+    "grunt-shell": "^2.1.0",
     "grunt-zopfli": "~0.3.1",
-    "wintersmith": "~2.0.10",
-    "wintersmith-livereload": "~0.1.1"
+    "wintersmith": "~2.0.10"
   },
   "dependencies": {
     "highlight.js": "~7.3.0",

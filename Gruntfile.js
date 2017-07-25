@@ -1,6 +1,6 @@
 module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-clean");
-    grunt.loadNpmTasks("grunt-wintersmith");
+    grunt.loadNpmTasks("grunt-shell");
     grunt.loadNpmTasks("grunt-zopfli");
 
     var config = {
@@ -15,19 +15,9 @@ module.exports = function (grunt) {
             server: [config.out]
         },
 
-        wintersmith: {
-            options: {
-                config: "wintersmith.json"
-            },
+        shell: {
             build: {
-                options: {
-                    action: "build"
-                }
-            },
-            preview: {
-                options: {
-                    action: "preview"
-                }
+                command: "wintersmith build -c wintersmith.json"
             }
         },
 
@@ -61,6 +51,5 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask("default", ["build"]);
-    grunt.registerTask("watch", ["wintersmith:preview"]);
-    grunt.registerTask("build", ["clean", "wintersmith:build", "zopfli"]);
+    grunt.registerTask("build", ["clean", "shell:build", "zopfli"]);
 };

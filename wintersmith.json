@@ -4,8 +4,7 @@
     "plugins": [
         "./plugins/highlight.coffee",
         "wintersmith-jade",
-        "wintersmith-less",
-        "wintersmith-livereload"
+        "wintersmith-less"
     ],
     "ignore": [
         "css/bootstrap.less",
