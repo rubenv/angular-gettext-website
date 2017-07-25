@@ -51,5 +51,6 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask("default", ["build"]);
+    grunt.registerTask("test", ["clean", "shell:build"]);
     grunt.registerTask("build", ["clean", "shell:build", "zopfli"]);
 };
