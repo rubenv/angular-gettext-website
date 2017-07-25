@@ -12,10 +12,10 @@ Install the dependencies:
 npm install
 ```
 
-Preview it:
+Build it:
 
 ```
-grunt watch
+grunt build
 ```
 
 This website is built with Wintersmith. Check the [wintersmith website](http://wintersmith.io/) for details on how it's structured.
