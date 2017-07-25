@@ -21,12 +21,12 @@ grunt watch
 This website is built with Wintersmith. Check the [wintersmith website](http://wintersmith.io/) for details on how it's structured.
 
 [Pull requests welcome!](https://github.com/rubenv/angular-gettext-website/pulls)
-    
-## License 
+
+## License
 
     (The MIT License)
 
-    Copyright (C) 2013-2015 by Ruben Vermeersch <ruben@rocketeer.be>
+    Copyright (C) 2013-2017 by Ruben Vermeersch <ruben@rocketeer.be>
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
