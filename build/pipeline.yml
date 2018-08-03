@@ -11,7 +11,7 @@ resources:
       webhook_token: ((webhook-token))
       source:
           branch: master
-          uri: sh://git@github.com/rubenv/angular-gettext-website
+          uri: ssh://git@github.com/rubenv/angular-gettext-website
           private_key: ((git-private-key))
     - name: rsync-static
       type: rsync
