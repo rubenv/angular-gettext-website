@@ -1,0 +1,51 @@
+resource_types:
+    - name: rsync
+      type: docker-image
+      source:
+          repository: mrsixw/concourse-rsync-resource
+
+resources:
+    - name: angular-gettext-website
+      type: git
+      check_every: 24h
+      webhook_token: ((webhook-token))
+      source:
+          branch: master
+          uri: sh://git@github.com/rubenv/angular-gettext-website
+          private_key: ((git-private-key))
+    - name: rsync-static
+      type: rsync
+      check_every: 24h
+      source:
+          server: nginx-static.rocketeer
+          base_dir: /data/angular-gettext.rocketeer.be
+          user: root
+          private_key: ((rsync-static-key))
+          disable_version_path: true
+
+jobs:
+- name: build
+  serial: true
+  plan:
+      - get: angular-gettext-website
+        trigger: true
+      - task: build
+        config:
+            platform: linux
+            image_resource:
+                type: docker-image
+                source:
+                    repository: fedora
+                    tag: 28
+            inputs:
+                - name: angular-gettext-website
+            outputs:
+                - name: build
+            run: 
+                dir: angular-gettext-website
+                path: bash
+                args: ["build/build.sh"]
+      - put: rsync-static
+        params:
+            sync_dir: build
+            rsync_opts: ["-av", "--delete"]
